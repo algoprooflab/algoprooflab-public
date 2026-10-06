@@ -1,0 +1,20 @@
+{
+  "productId": "SALEBOT-5M-BR72",
+  "version": "1.0.0",
+  "status": "ACTIVE",
+  "period": {
+    "from": "2026-08-04",
+    "to": "2026-10-04"
+  },
+  "sourceMarkets": 17564,
+  "trades": 471,
+  "wins": 265,
+  "losses": 206,
+  "winRate": 0.5626326964,
+  "flatStakeUsdc": 1,
+  "netPnlUsdc": 30.0174276254,
+  "maxDrawdownUsdc": 9.3471467572,
+  "longestLossRun": 7,
+  "stressDoubleSlippageNetPnlUsdc": 25.1785469334,
+  "resultType": "historical_calculation_on_market_data"
+}
