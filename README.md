@@ -1,114 +1,110 @@
 # AlgoProof Lab
 
-**Verified Trading Bots & Strategies**
+**Verifiable research, self-hosted trading software and strategy reports for prediction markets.**
+
+[English](README.md) | [Русский](README_RU.md)
 
 ![AlgoProof Lab](assets/algoprooflab-avatar-v1.png)
 
-Публичная доказательная база проверяемых self-hosted ботов и торговых стратегий. Первый продукт предназначен для рынков Bitcoin Up/Down 5m на Polymarket.
+AlgoProof Lab has researched crypto-market automation since 2022. This public repository explains how prediction-market prices, shares, order books, execution and strategy validation work. It also contains reproducible reports and sample data for our first Polymarket client package.
 
-Этот репозиторий содержит отчёты, примеры сделок, документацию, историю версий и правила проверки продукта. Код продаваемой стратегии и клиентская сборка здесь не публикуются.
+The commercial strategy source code and downloadable client are not published here. Buyers run the client on their own VPS and keep control of their credentials, funds and risk settings.
 
-## Реальная торговля лаборатории
+## Laboratory live trading
 
-Период текущего непрерывного LIVE-журнала: **15 сентября — 7 октября 2026 года**.
+Current continuous live-trading journal: **September 15 through October 7, 2026**.
 
-| Показатель | Значение |
+| Metric | Value |
 |---|---:|
-| Завершённых реальных сделок | 469 |
-| Сделок в плюс / минус | 271 / 198 |
-| Доля прибыльных сделок | 57,78% |
-| Итог после комиссий | **+485,82 USDC** |
+| Completed real trades | 469 |
+| Profitable / losing trades | 271 / 198 |
+| Profitable outcomes | 57.78% |
+| Net result after fees | **+485.82 USDC** |
 
-В этот период лаборатория проверяла несколько стратегий. Поэтому это подтверждённый результат реального лабораторного счёта в целом, а не заявленный результат одного продаваемого пакета. [Подробности и дата снимка](docs/LIVE_TRADING_RU.md).
+The laboratory tested several strategy versions during this period. These figures therefore describe the verified laboratory account as a whole, not the claimed performance of one product. See the [live-trading explanation](docs/LIVE_TRADING_EN.md) and the machine-readable files in [`data`](data/).
 
-## Историческая проверка первого продукта: SALEBOT-5M-BR72
+## First product: SALEBOT-5M-BR72
 
-Период исследования: **4 августа — 4 октября 2026 года**.
+Historical study period: **August 4 through October 4, 2026**.
 
-| Показатель | Значение |
+| Metric | Value |
 |---|---:|
-| Закрытых рынков в исходной выборке | 17 564 |
-| Расчётных сделок стратегии | 471 |
-| Прибыльных исходов | 56,26% |
-| Результат при фиксированной ставке 1 USDC | +30,02 USDC |
-| Максимальная расчётная просадка | 9,35 USDC |
-| Стресс-тест с удвоенным проскальзыванием | +25,18 USDC |
+| Closed markets in the source dataset | 17,564 |
+| Strategy trades | 471 |
+| Profitable outcomes | 56.26% |
+| Result at a fixed 1 USDC stake | +30.02 USDC |
+| Maximum modeled drawdown | 9.35 USDC |
+| Stress test with doubled slippage | +25.18 USDC |
 
-### Пересчёт того же журнала для разных ставок
+### Linear stake illustration
 
-| Ставка на сделку | Расчётный результат | Расчётная максимальная просадка |
+| Stake per trade | Arithmetic result | Arithmetic maximum drawdown |
 |---:|---:|---:|
-| 20 USDC | +600,40 USDC | 187 USDC |
-| 40 USDC | +1 200,80 USDC | 374 USDC |
-| 100 USDC | +3 002 USDC | 935 USDC |
-| 400 USDC | +12 008 USDC | 3 740 USDC |
+| 20 USDC | +600.40 USDC | 187 USDC |
+| 40 USDC | +1,200.80 USDC | 374 USDC |
+| 100 USDC | +3,002 USDC | 935 USDC |
+| 400 USDC | +12,008 USDC | 3,740 USDC |
 
-Это линейный пересчёт тех же 471 исторических сигналов. Стандартная лицензия сейчас ограничена ставкой 100 USDC; строка 400 USDC добавлена для оценки масштаба и требует отдельной проверки исполнения по стакану.
+This table multiplies the same 471 historical signals. It does **not** prove that larger orders could have filled at the original prices. The standard license is currently limited to 100 USDC per trade; the 400 USDC line is shown only as an arithmetic scale illustration and requires separate order-book validation.
 
-## Что можно проверить
+## Start here
 
-- [Реальная торговля лаборатории с 15 сентября](docs/LIVE_TRADING_RU.md)
-- [Ежедневная статистика LIVE-счёта](docs/DAILY_STATS_RU.md)
-- [Варианты доступа и автоматическая смена стратегий](docs/PRODUCT_ACCESS_RU.md)
-- [Подробный отчёт](docs/BR72_REPORT_RU.md)
-- [Краткая сводка в JSON](data/BR72_PUBLIC_SUMMARY.json)
-- [Пример строк из журнала](data/BR72_SAMPLE_TRADES.csv)
-- [Как считался результат](docs/METHODOLOGY_RU.md)
-- [Безопасность клиентских данных](SECURITY.md)
-- [Как выглядит установка](docs/INSTALLATION_OVERVIEW_RU.md)
-- [Жизненный цикл стратегий](docs/STRATEGY_LIFECYCLE_RU.md)
-- [Частые вопросы](docs/FAQ_RU.md)
-- [История версий](CHANGELOG.md)
-- [Контрольные суммы выпусков](docs/RELEASES_RU.md)
+- [Polymarket from zero: markets, shares and resolution](docs/POLYMARKET_FROM_ZERO_EN.md)
+- [Share price, quantity and PnL](docs/SHARES_PRICE_AND_PNL_EN.md)
+- [Order books, liquidity and slippage](docs/ORDERBOOK_AND_LIQUIDITY_EN.md)
+- [How a trading bot works](docs/HOW_TRADING_BOT_WORKS_EN.md)
+- [Backtest, demo mode and live trading](docs/BACKTEST_VS_LIVE_EN.md)
+- [Calculation methodology](docs/METHODOLOGY_EN.md)
 
-## Что получает покупатель
+## Evidence and product information
 
-- готовую self-hosted сборку;
-- мастер первоначальной настройки;
-- управление и уведомления через собственного Telegram-бота;
-- демонстрационный режим без отправки заявок;
-- реальный режим с ограничением ставки и дневного убытка;
-- пробную лицензию на 48 часов;
-- подробную инструкцию от аренды VPS до запуска;
-- поддержку установки;
-- фиксированную стратегию без срока или автоматические изменения стратегий по подписке.
+- [Historical BR72 report](docs/BR72_REPORT_EN.md)
+- [Live laboratory trading](docs/LIVE_TRADING_EN.md)
+- [Product access and strategy updates](docs/PRODUCT_ACCESS_EN.md)
+- [Installation overview](docs/INSTALLATION_OVERVIEW_EN.md)
+- [Frequently asked questions](docs/FAQ_EN.md)
+- [Public summary in JSON](data/BR72_PUBLIC_SUMMARY.json)
+- [Sample trade rows in CSV](data/BR72_SAMPLE_TRADES.csv)
+- [Live public summary](data/LIVE_PUBLIC_SUMMARY.json)
+- [Security and credential handling](SECURITY_EN.md)
+- [Release history](CHANGELOG.md)
 
-Все торговые секреты покупатель вводит только на своём VPS. Продавец не запрашивает и не хранит приватный ключ, seed-фразу, API secret, Telegram-токен или пароль от сервера.
+## What the buyer receives
 
-## Оплата
+- a self-hosted client package;
+- an initial setup wizard;
+- control and notifications through the buyer's own Telegram bot;
+- demo mode without order submission;
+- live mode with local stake and daily-loss limits;
+- one 48-hour trial per Telegram account and VPS;
+- installation instructions from VPS rental through startup;
+- installation support;
+- either one fixed strategy or automatic strategy changes during an active update plan.
 
-Доступны два продукта:
+The shop never asks for or stores a buyer's wallet private key, seed phrase, Polymarket API secret, Telegram bot token or VPS password.
 
-- **200 USD** — бот и одна закреплённая стратегия без срока;
-- **400 USD** — бот и автоматические изменения стратегий в течение 30 дней;
-- **200 USD** — продление автоматических изменений ещё на 30 дней.
+## Access options
 
-Если подписку не продлевать, бот продолжает работать на последней полученной стратегии.
+- **200 USD** — client bot and one fixed strategy with no time limit;
+- **400 USD** — client bot and automatic strategy changes for 30 days;
+- **200 USD** — another 30 days of strategy updates.
 
-Есть два способа оплаты:
+If the update plan expires, the client keeps using the last strategy it received.
 
-1. **Внутри Telegram — Telegram Stars.** Покупатель оформляет заказ через [@algoproof_shop_bot](https://t.me/algoproof_shop_bot), оплачивает выставленный счёт и получает лицензию после подтверждения платежа Telegram.
-2. **Вне Telegram — USDT по реквизитам, опубликованным на этой странице GitHub.** Перед переводом напишите [@algoproof_support](https://t.me/algoproof_support), получите номер заказа и точную сумму.
+Open the bilingual Telegram shop: [@algoproof_shop_bot](https://t.me/algoproof_shop_bot?start=github).
 
-Реквизиты USDT, проверенные в Walt 7 октября 2026 года:
+Digital-product payments inside Telegram are invoiced in Telegram Stars. USDT purchases are handled through [@algoproof_support](https://t.me/algoproof_support) after the buyer receives an order number and exact payment instructions. Never send anyone a private key, seed phrase or wallet password.
 
-- сеть **TON**: `UQB9Y_Is2Xd2Sqarltgnh55rSkZ1tyBN9VhrDAb9Sr-vqYAT`;
-- сеть **Tron (TRC20)**: `TPXukusuPbG7TrMdwY7NMVZfHnWnstPFDC`.
-
-Отправляйте только USDT и только по выбранной сети. После перевода пришлите поддержке номер заказа и хеш транзакции (TXID). GitHub не принимает и не обрабатывает оплату — он используется как публичная страница с проверяемыми реквизитами. Никому не отправляйте приватный ключ, seed-фразу или пароль от кошелька.
-
-## Статус
+## Status
 
 ```text
-Продукт: SALEBOT-5M-BR72
-Версия: 1.0.0
-Статус стратегии: ACTIVE
-Публичная проверка: подготовлена
-Продажи: закрытая бета
+Product: SALEBOT-5M-BR72
+Version: 1.0.0
+Strategy status: ACTIVE
+Public evidence: available
+Sales: closed beta
 ```
 
-Публичный Telegram-канал: [@algoprooflab](https://t.me/algoprooflab).
-
-Бот-магазин: [@algoproof_shop_bot](https://t.me/algoproof_shop_bot).
-
-Канал, репозиторий, бот-магазин и поддержка уже активны.
+- Telegram publication channel: [@algoprooflab](https://t.me/algoprooflab)
+- Telegram shop: [@algoproof_shop_bot](https://t.me/algoproof_shop_bot?start=github)
+- Support: [@algoproof_support](https://t.me/algoproof_support)
