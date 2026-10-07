@@ -2,11 +2,11 @@
   "scope": "AlgoProof Lab continuous real-money trading journal",
   "containsMultipleStrategies": true,
   "periodStartMsk": "2026-09-15T03:15:00+03:00",
-  "periodEndMsk": "2026-10-06T18:25:00+03:00",
-  "settledTrades": 466,
-  "profitableTrades": 268,
+  "periodEndMsk": "2026-10-07T02:35:00+03:00",
+  "settledTrades": 469,
+  "profitableTrades": 271,
   "losingTrades": 198,
-  "winRatePercent": 57.5107,
-  "netPnlUsdcAfterFees": 402.436658,
+  "winRatePercent": 57.7825,
+  "netPnlUsdcAfterFees": 485.820248,
   "openTradesIncluded": false
 }

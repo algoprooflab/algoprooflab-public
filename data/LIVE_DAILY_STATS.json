@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "scope": "AlgoProof Lab LIVE account",
+  "source": "read-only SQLite snapshot of the laboratory LIVE executor",
+  "containsMultipleStrategies": true,
+  "excludedPredecessorTrades": 5,
+  "generatedAt": "2026-10-07T13:42:44.622023+00:00",
+  "daily": [
+    {
+      "dateMsk": "2026-09-15",
+      "settledTrades": 29,
+      "wins": 16,
+      "losses": 13,
+      "winRatePercent": 55.1724,
+      "stakeUsdc": 29.9954,
+      "netPnlUsdcAfterFees": 1.587193
+    },
+    {
+      "dateMsk": "2026-09-16",
+      "settledTrades": 28,
+      "wins": 16,
+      "losses": 12,
+      "winRatePercent": 57.1429,
+      "stakeUsdc": 33.1032,
+      "netPnlUsdcAfterFees": 2.30822
+    },
+    {
+      "dateMsk": "2026-09-17",
+      "settledTrades": 24,
+      "wins": 15,
+      "losses": 9,
+      "winRatePercent": 62.5,
+      "stakeUsdc": 74.4885,
+      "netPnlUsdcAfterFees": 15.002975
+    },
+    {
+      "dateMsk": "2026-09-18",
+      "settledTrades": 40,
+      "wins": 22,
+      "losses": 18,
+      "winRatePercent": 55.0,
+      "stakeUsdc": 124.0803,
+      "netPnlUsdcAfterFees": 3.389592
+    },
+    {
+      "dateMsk": "2026-09-19",
+      "settledTrades": 13,
+      "wins": 10,
+      "losses": 3,
+      "winRatePercent": 76.9231,
+      "stakeUsdc": 72.394,
+      "netPnlUsdcAfterFees": 35.397697
+    },
+    {
+      "dateMsk": "2026-09-20",
+      "settledTrades": 12,
+      "wins": 7,
+      "losses": 5,
+      "winRatePercent": 58.3333,
+      "stakeUsdc": 123.99458,
+      "netPnlUsdcAfterFees": 11.147635
+    },
+    {
+      "dateMsk": "2026-09-21",
+      "settledTrades": 7,
+      "wins": 6,
+      "losses": 1,
+      "winRatePercent": 85.7143,
+      "stakeUsdc": 72.429,
+      "netPnlUsdcAfterFees": 46.394532
+    },
+    {
+      "dateMsk": "2026-09-22",
+      "settledTrades": 13,
+      "wins": 9,
+      "losses": 4,
+      "winRatePercent": 69.2308,
+      "stakeUsdc": 134.494,
+      "netPnlUsdcAfterFees": 42.821309
+    },
+    {
+      "dateMsk": "2026-09-23",
+      "settledTrades": 15,
+      "wins": 10,
+      "losses": 5,
+      "winRatePercent": 66.6667,
+      "stakeUsdc": 155.131,
+      "netPnlUsdcAfterFees": 41.339596
+    },
+    {
+      "dateMsk": "2026-09-24",
+      "settledTrades": 26,
+      "wins": 13,
+      "losses": 13,
+      "winRatePercent": 50.0,
+      "stakeUsdc": 268.882989,
+      "netPnlUsdcAfterFees": -15.37688
+    },
+    {
+      "dateMsk": "2026-09-25",
+      "settledTrades": 14,
+      "wins": 10,
+      "losses": 4,
+      "winRatePercent": 71.4286,
+      "stakeUsdc": 144.802,
+      "netPnlUsdcAfterFees": 52.860146
+    },
+    {
+      "dateMsk": "2026-09-26",
+      "settledTrades": 16,
+      "wins": 8,
+      "losses": 8,
+      "winRatePercent": 50.0,
+      "stakeUsdc": 330.966549,
+      "netPnlUsdcAfterFees": -18.524477
+    },
+    {
+      "dateMsk": "2026-09-27",
+      "settledTrades": 30,
+      "wins": 15,
+      "losses": 15,
+      "winRatePercent": 50.0,
+      "stakeUsdc": 620.302707,
+      "netPnlUsdcAfterFees": -46.938863
+    },
+    {
+      "dateMsk": "2026-09-28",
+      "settledTrades": 19,
+      "wins": 13,
+      "losses": 6,
+      "winRatePercent": 68.4211,
+      "stakeUsdc": 392.941848,
+      "netPnlUsdcAfterFees": 111.198106
+    },
+    {
+      "dateMsk": "2026-09-29",
+      "settledTrades": 27,
+      "wins": 14,
+      "losses": 13,
+      "winRatePercent": 51.8519,
+      "stakeUsdc": 558.462259,
+      "netPnlUsdcAfterFees": -11.586133
+    },
+    {
+      "dateMsk": "2026-09-30",
+      "settledTrades": 35,
+      "wins": 20,
+      "losses": 15,
+      "winRatePercent": 57.1429,
+      "stakeUsdc": 1085.854419,
+      "netPnlUsdcAfterFees": 91.040646
+    },
+    {
+      "dateMsk": "2026-10-01",
+      "settledTrades": 24,
+      "wins": 12,
+      "losses": 12,
+      "winRatePercent": 50.0,
+      "stakeUsdc": 992.892769,
+      "netPnlUsdcAfterFees": -86.85317
+    },
+    {
+      "dateMsk": "2026-10-02",
+      "settledTrades": 24,
+      "wins": 13,
+      "losses": 11,
+      "winRatePercent": 54.1667,
+      "stakeUsdc": 992.880199,
+      "netPnlUsdcAfterFees": 22.453606
+    },
+    {
+      "dateMsk": "2026-10-03",
+      "settledTrades": 14,
+      "wins": 9,
+      "losses": 5,
+      "winRatePercent": 64.2857,
+      "stakeUsdc": 579.01562,
+      "netPnlUsdcAfterFees": 120.042657
+    },
+    {
+      "dateMsk": "2026-10-04",
+      "settledTrades": 14,
+      "wins": 7,
+      "losses": 7,
+      "winRatePercent": 50.0,
+      "stakeUsdc": 578.970518,
+      "netPnlUsdcAfterFees": -40.689277
+    },
+    {
+      "dateMsk": "2026-10-05",
+      "settledTrades": 8,
+      "wins": 3,
+      "losses": 5,
+      "winRatePercent": 37.5,
+      "stakeUsdc": 289.636039,
+      "netPnlUsdcAfterFees": -91.204665
+    },
+    {
+      "dateMsk": "2026-10-06",
+      "settledTrades": 34,
+      "wins": 20,
+      "losses": 14,
+      "winRatePercent": 58.8235,
+      "stakeUsdc": 858.356989,
+      "netPnlUsdcAfterFees": 116.626213
+    },
+    {
+      "dateMsk": "2026-10-07",
+      "settledTrades": 3,
+      "wins": 3,
+      "losses": 0,
+      "winRatePercent": 100.0,
+      "stakeUsdc": 93.087,
+      "netPnlUsdcAfterFees": 83.38359
+    }
+  ],
+  "cumulative": {
+    "dateMsk": null,
+    "settledTrades": 469,
+    "wins": 271,
+    "losses": 198,
+    "winRatePercent": 57.7825,
+    "stakeUsdc": 8607.161885,
+    "netPnlUsdcAfterFees": 485.820248
+  }
+}
