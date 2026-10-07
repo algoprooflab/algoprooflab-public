@@ -1,0 +1,43 @@
+name: Daily LIVE statistics
+
+on:
+  schedule:
+    - cron: "20 21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-live-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download verified public statistics
+        shell: bash
+        run: |
+          set -euo pipefail
+          pin="sha256//sCWQWlEZfpg82NnInjX4nWZZLHxDpflWyyEW3ht4I2Y="
+          base="https://vadchernevich85.fvds.ru/stats/v1"
+          curl --fail --silent --show-error --location --insecure --pinnedpubkey "$pin" \
+            "$base/history.json" --output data/LIVE_DAILY_STATS.json
+          curl --fail --silent --show-error --location --insecure --pinnedpubkey "$pin" \
+            "$base/DAILY_STATS_RU.md" --output docs/DAILY_STATS_RU.md
+
+      - name: Commit a changed report
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/LIVE_DAILY_STATS.json docs/DAILY_STATS_RU.md; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/LIVE_DAILY_STATS.json docs/DAILY_STATS_RU.md
+          git commit -m "Update daily LIVE statistics"
+          git push
