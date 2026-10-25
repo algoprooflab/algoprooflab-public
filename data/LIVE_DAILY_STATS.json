@@ -4,7 +4,7 @@
   "source": "read-only SQLite snapshot of the laboratory LIVE executor",
   "containsMultipleStrategies": true,
   "excludedPredecessorTrades": 5,
-  "generatedAt": "2026-10-24T21:10:00.363600+00:00",
+  "generatedAt": "2026-10-25T21:10:07.977383+00:00",
   "daily": [
     {
       "dateMsk": "2026-09-15",
