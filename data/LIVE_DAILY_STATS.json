@@ -4,7 +4,7 @@
   "source": "read-only SQLite snapshot of the laboratory LIVE executor",
   "containsMultipleStrategies": true,
   "excludedPredecessorTrades": 5,
-  "generatedAt": "2026-11-11T21:11:02.024188+00:00",
+  "generatedAt": "2026-11-12T21:10:27.043949+00:00",
   "daily": [
     {
       "dateMsk": "2026-09-15",
@@ -428,15 +428,24 @@
       "winRatePercent": 40.0,
       "stakeUsdc": 57.8186,
       "netPnlUsdcAfterFees": -15.324752
+    },
+    {
+      "dateMsk": "2026-11-12",
+      "settledTrades": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRatePercent": 0.0,
+      "stakeUsdc": 11.35794,
+      "netPnlUsdcAfterFees": -11.35794
     }
   ],
   "cumulative": {
     "dateMsk": null,
-    "settledTrades": 662,
+    "settledTrades": 663,
     "wins": 374,
-    "losses": 288,
-    "winRatePercent": 56.4955,
-    "stakeUsdc": 17048.030989,
-    "netPnlUsdcAfterFees": 137.112286
+    "losses": 289,
+    "winRatePercent": 56.4103,
+    "stakeUsdc": 17059.388929,
+    "netPnlUsdcAfterFees": 125.754346
   }
 }
